@@ -1,0 +1,150 @@
+\documentclass[10pt,a4paper,titlepage]{report} 
+
+% Include basis configuration
+\input{config.tex} 
+
+% Include file containing acronyms and glossary
+\input{./tex/glossary}
+
+
+\begin{document}
+
+
+\thispagestyle{empty}
+\title{{\LARGE\bf Requirements Analysis, Software Design and Test Documentation}}
+\author{ \authors \\
+\vspace*{1.0in} 
+\mbox{} \\
+{\Large \systemname \systemversion} \\
+\vspace*{1.0in} 
+\mbox{} \\
+\vspace*{1.0in} 
+\mbox{{ Analysis, Design and Software Architecture (BDSA)}} \\
+{\large {\copyright} \companyname}
+\date{\documentdate}
+}
+
+\maketitle
+
+%================== REVISION CONTROL ===============================================
+
+\noindent {\bf {\huge Revision history}} \\
+ \begin{tabular}{| l | c | p{5.5cm} | p{1cm}| p{1.5cm} |}
+\hline
+{\bf Date} & {\bf Ver.} & {\bf Description} & {\bf Ref.}& {\bf Author}\\
+\hline
+\hline
+08/09-15 & 0.1 & Added requirements and scattered notes & & siak tbch ndom \\
+\hline
+10/09-15 & 0.2 & Creating scenarios and use cases & & mehr siak tbch ndom \\
+\hline
+12/09-15 & 0.3 & Finishing scenarios and use cases for first hand in & & mehr siak tbch ndom \\
+\hline
+12/09-15 & 0.4 & Setting up TeX for all project & & mehr \\
+\hline
+25/09-15 & 0.5 & Changing RAD according to feedback & & mehr siak ndom \\
+\hline
+
+\end{tabular}
+
+
+%\clearpage
+
+\chapter*{Preamble}
+\label{sec:preamble}
+
+This report is done as part of the Analysis, Design, and Software Architecture (BDSA) course at the IT University of Copenhagen. It provides an outline and some initial examples of the content of a report designed to document software systems. In particular, this outline is a useful starting point for the report, which should document the BDSA project done in the end of the course. 
+
+%\begin{informationnote}
+%This ends the preamble -- the rest of the document is the outlines of the report.
+%\end{informationnote}
+
+
+
+%\clearpage
+\tableofcontents
+
+%\clearpage
+%\listoffigures 
+
+%%\clearpage
+%\printglossaries
+%
+%% Section Definitions Acronums, and abbriviations
+%% Generated based on acronym entries in ../glossary.tex
+%\printglossary[type=\acronymtype]
+
+
+%\clearpage
+
+\chapter{Introduction}
+\label{sec:introduction}
+\input{./tex/introduction}
+
+\part{Requirement Analysis Document}
+\label{part:rad}
+
+\chapter{Current System}
+\label{sec:current_system}
+\input{./tex/current_system}
+
+\chapter{Proposed System}
+\label{sec:proposed_system}
+\input{./tex/proposed_system}
+
+\chapter{System Models}
+\label{sec:system_models}
+\input{./tex/system_models}
+
+\part{Software Design Document}
+\label{part:sdd}
+
+\chapter{Current Software Architecture}
+\label{sec:current_architecture}
+\input{./tex/current_architecture}
+
+\chapter{Proposed Software Architecture}
+\label{sec:proposed_architecture}
+\input{./tex/proposed_architecture}
+
+\part{Object Design Document}
+\label{part:odd}
+
+\chapter{Object Design and Patterns}
+\label{sec:object_design}
+\input{./tex/object_design}
+
+\part{Test Document}
+\label{part:test}
+
+\chapter{Test Plan and Results}
+\label{sec:test}
+\input{./tex/test}
+
+%\part{SCRUM Documentation}
+
+%\chapter{SCRUM}
+%\label{sec:scrum}
+%\input{./tex/scrum}
+
+
+\appendix
+
+
+%\bibliographystyle{plainnat}
+
+% The final section contains the sources of any and all references to other
+% group documents, articles, books, etc.  that you used in creating this
+% document.  You need to have created the file analysis.bib with
+% entries for all of your sources.
+%
+\bibliographystyle{plain}
+\bibliography{../../itss} % itss.bib is the bibliography file name
+
+% WHY IS THE BIBLIOGRAPHY NOT IN THE TABLE OF CONTENT?????
+
+% Glossary chapter
+% Generated based on glossary entries in ./glossary.tex
+\printglossary
+
+\end{document}

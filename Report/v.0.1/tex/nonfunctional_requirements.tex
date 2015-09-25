@@ -1,0 +1,112 @@
+
+
+%Note that at this stage of requirement specification, these non-functional requirements are not defined in a manner where they can be measured. I.e.~there are no measurable goal and conditions put up. How is, for example, the usability requirement of `quick' and `easy' to be defined and measured? These will be added later.
+
+
+%FURPS+
+
+%Usability is the ease with which a user can learn to operate, prepare inputs for, and interpret outputs of a system or component. Usability requirements include, for example, conventions adopted by the user interface, the scope of online help, and the level of user documentation. Often, clients address usability issues by requiring the developer to follow user interface guidelines on color schemes, logos, and fonts.
+
+\subsection{Usability}
+
+The system should be easy to use for all users. This boils down to the following usability requirements:
+
+\begin{itemize}
+\item A user should be able to fill out the study configuration UI in “x” seconds.
+\item should be able to see information...
+\item The user should be able to have a complete overview of the their personal tasks.
+\item The user should be able to quickly and easily update information...
+%\item 
+\end{itemize}
+
+%Reliability is the ability of a system or component to perform its required functions under stated conditions for a specified period of time. Reliability requirements include, for example, an acceptable mean time to failure and the ability to detect specified faults or to withstand specified security attacks. More recently, this category is often replaced by dependability, which is the property of a computer system such that reliance can justifiably be placed on the service it delivers. Dependability includes reliability, robustness (the degree to which a system or component can function correctly in the presence of invalid inputs or stressful environment conditions), and safety (a measure of the absence of catastrophic consequences to the environment).
+
+\subsection{Reliability}
+
+The system should be reliable (dependable, robust, and safe) in the following manner:
+
+\begin{itemize}
+\item No bugs should crash the system but instead display an error message with information regarding the error.
+\item The system should be able to recover from a system failure (restart).
+%\item 
+%\item 
+\end{itemize}
+
+
+%Performance requirements are concerned with quantifiable attributes of the system, such as response time (how quickly the system reacts to a user input), throughput (how much work the system can accomplish within a specified amount of time), availability (the degree to which a system or component is operational and accessible when required for use), and accuracy.
+\subsection{Performance}
+
+\begin{itemize}
+\item The system should retrieve the papers which passed the inclusion / exclusion criteria within 1 seconds.
+\item The system should add an entry into the DB within “x” seconds
+\item The system should be available 99% of the time 
+\end{itemize}
+
+%Supportability requirements are concerned with the ease of changes to the system after deployment, including for example, adaptability (the ability to change the system to deal with additional application domain concepts), maintainability (the ability to change the system to deal with new technology or to fix defects), and internationalization (the ability to change the system to deal with additional international conventions, such as languages, units, and number formats). The ISO 9126 standard on software quality [ISO Std. 9126], similar to the FURPS+ model, replaces this category with two categories: maintainability and portability (the ease with which a system or component can be transferred from one hardware or software environment to another).
+\subsection{Maintainability}
+
+\begin{itemize}
+\item The system should be extensible. 
+\item The database should be maintainable / updatable
+\item The system should be easy to deploy.
+\item The system should be flexible in terms of being able to deploy on different/ new hardware and software technology.
+\end{itemize}
+
+
+%\subsection{Portability}
+%
+
+To be determined.
+
+
+%Implementation requirements are constraints on the implementation of the system, including the use of specific tools, programming languages, or hardware platforms.
+\subsection{Implementation}
+\begin{itemize}
+\item The system should be publishable as Open Source Software.
+\item The system should fit the imposed interface.
+\item The system should be developed using C\texttt{\#} and WPF.
+\item The system should be testable.
+\end{itemize}
+
+%Interface requirements are constraints imposed by external systems, including legacy systems and interchange formats.
+\subsection{Interface}
+
+\begin{itemize}
+\item The system should import data via (.bib).
+\item The system should export data in .csv as a minimum (multiple formats?).
+\end{itemize}
+
+\subsection{Packaging}
+\begin{itemize}
+\item The end user should be able to install the program.
+\end{itemize}
+
+%Operations requirements are constraints on the administration and management of the system in the operational setting.
+%\subsection{Operations}
+
+%See section~\ref{sec:target_environment}.
+
+
+%PACKAGING requirements are constraints on the actual delivery of the system (e.g., constraints on the installation media for setting up the software).
+%\subsection{Packaging}
+
+%LEGAL requirements are concerned with licensing, regulation, and certification issues. An example of a legal requirement is that software developed for the U.S. federal government must comply with Section 508 of the Rehabilitation Act of 1973, requiring that government information systems must be accessible to people with disabilities.
+\subsection{Legal}
+
+\begin{itemize}
+\item Should be able to be published as an open source software, and therefore adhere to the danish copyright act.
+	\begin{itemize}
+	\item Intellectual property law
+		\begin{itemize}
+		\item \url{http://mwblaw.dk/Doing%20Business%20in%20Denmark/Intellectual%20property%20law.aspx}
+		\end{itemize}
+	\item Consolidated Act on Copyright 2010 (Consolidated Act No. 202 of February 27, 2010)
+		\begin{itemize}
+		\item \url{http://www.wipo.int/wipolex/en/details.jsp?id=7394}
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+
+
+
+
